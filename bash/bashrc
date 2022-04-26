@@ -14,11 +14,15 @@ PS1='[\u@\h \W]\$ '
 
 # xrandr
 alias xrandr2560='xrandr --output HDMI-0 --mode 2560x1080'
-alias xrandr1920='xrandr --output Virtual1 --mode 1920x1080'
+alias xrandr1920='xrandr --output HDMI-0 --mode 1920x1080'
 alias xrandr1280='xrandr --output HDMI-0 --mode 1280x720'
+alias monitor='xrandr --output HDMI-0 --mode 1920x1080 --rate 120 --primary --output DVI-D-0 --mode 1920x1080 --rate 60 --right-of HDMI-0'
 
 # Aplicativos
-alias vim='nvim'
+alias vim='code-oss'
+alias nvim='nvim'
+alias musica='./rofi-beats'
+alias volume='alsamixer'
 
 
 # Void

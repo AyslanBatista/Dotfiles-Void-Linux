@@ -1,0 +1,63 @@
+Terminal - Distro - Void-Linux:
+
+--------------''' COMANDOS DO SISTEMA '''---------------------
+ctrl+a >> '''leva para o inicio da linha'''
+ctrl+e >> '''leva para o final da linha'''
+ctrl+k >> '''apaga tudo do curso em diante'''
+sudo >> '''usado no inicio do comando para receber permissões de super usuario'''
+yes | ou nao | >> '''para confirmar o comando, yes | "programa" '''
+sudo su >> '''entra em usuario com permissões de super usuario'''
+exit >> '''sair do terminal'''
+clear >> '''limpar o terminal, ctrl + L'''
+man >> '''manual de um determinado comando, man "rm" '''
+top >> ''' configrações e processamento do sistema '''
+htop >> ''' configrações e processamento do sistema '''
+history >> '''lista de comandos que ja foi utilizado '''
+uname >> '''mostra o sistema que está sendo usado '''
+uptime >> '''mostra o horario e o tempo que está ligado o computador'''
+free -h >> '''uso de memoria ram'''
+df >> '''informações do disco '''
+date >> '''informa a data e o horario'''
+cal >> '''calendario'''
+chmod +x >> '''torna o arquivo executavel'''
+xbps-query -Rs >> '''procura o programa no repositorio'''
+
+--------------''' COMANDOS DE USUARIO '''---------------------
+whoami >> '''informa o usuario'''
+
+--------------''' DIRETORIOS E PASTAS '''---------------------
+cd >> '''entrar em uma pasta ou diretorio'''
+tabtab >> '''mostra todas as pasta dentro do diretorio que você está querendo entrar'''
+cd .. >> '''voltar na pasta anterior'''
+pwd >> '''caminho da pasta onde você está'''
+ls >> '''informa todos os arquivos e pasta que existe no local que você está'''
+ls -l >> '''tras a mesma informações do ls porem que com mais detalhes'''
+ls -a >> '''informa arquivos ocultos '''
+ls --color=auto >> '''informa arquivos com cores diferentes'''
+mkdir >> '''criar pasta/diretorio'''
+mv >> '''mover arquivos mv "arquivo" "local que sera movido" '''
+cp >> '''copiar arquivo cp "arquivo" "local que sera copiado" '''
+rm >> '''exlcuir arquivo rm "arquivo" '''
+rm -r >> '''excluir pasta rm -r "arquivo" '''
+rename >> '''renomear o arquivo'''
+find >> ''' localiza arquivos dentro da pasta que você está find "arquivo" '''
+killall >> ''' fecha o programa ou pasta que estiver aberto, killall "nautilus" '''
+
+--------------''' ARQUIVOS  '''---------------------
+cat >> '''vizualizar o conteudo do arquivo cat "arquivo" ''' 
+head >> '''vizualizar o conteudo inicio do arquivo''' 
+tail >> '''vizualizar o conteudo final do arquivo'''
+wc >> '''informações sobre o arquivo'''
+vim >> '''cria um arquivo de texto vim "nome do arquivo" ''' touch>>
+
+
+--------------''' COMANDOS QUE PRECISA INSTALAR '''---------------------
+sudo xbps-install mlocate >> '''instalação'''
+sudo updatedb && locate -e bench-repo >> '''atualizar o comando locate e ter acesso a todos os arquivos'''
+locate >> '''localizar todos os arquivos que tem o nome que foi passado locate "nome"'''
+
+echo $SHELL >> '''informa qual shell está sendo utilizado'''
+chsh >> '''comando para alterar o shell'''
+/bin/bash >> '''mudando para o shell bash'''
+
+

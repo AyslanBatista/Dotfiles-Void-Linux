@@ -1,0 +1,34 @@
+COMANDOS VIM 
+vim >> "criando arquivo vim 'nome do arquivo' "
+
+--------------''' COMANDOS VIM EM MODO NORMAL '''---------------------
+esc >> "entra no modo normal"
+:q >> "fechar o arquivo, q! forçar o encerramento do arquivo"
+:w >> "gravar o arquivo"
+:wq >> "gravar e fechar o arquivo"
+:%s >> "substituir palavras :%s/Não/Sim
+:set nohlsearch >> "sair da seleção"
+/ >> "localizar palavras /não"
+shift+pgdown ou shift+pgup>> "navega entre as paginas"
+G >> "leva para final do arquivo"
+gg >> "leva para o inicio do arquivo"
+w >> "passa pelo arquivo de palavra em palavra"
+0 >> "move para o inicio da linha"
+L >> "leva para o final da pagina"
+dd >> "apagar linha"
+u >> "desfazer a alteração"
+
+--------------''' COMANDOS VIM EM MODO INSERÇÃO '''---------------------
+i >> "modoo de inserção antes da letra"
+a >> "modo de inserção depois da letra"
+I >> "modo de inserção no inicio da linha"
+A >> "modo de inserção no final da linha"
+
+--------------''' COMANDOS VIM EM MODO VISUALIZAÇÃO '''---------------------
+esc + v >> "entra  no modo de visualição e seleciona letra por letra "
+esc + V >> "entra  no modo de visualição e seleciona linha por linha "
+y >> "copiar seleção"
+p >> "colar seleção"
+d >> "cortar seleção"
+u >> "desfazer"
+

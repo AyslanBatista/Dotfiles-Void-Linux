@@ -1,4 +1,0 @@
-#!/bin/bash
-
-W=$(curl -s https://wttr.in/S%C3%A3o-Jose-Do-Rio-Preto?format="%t\n" | head -n 3)
-echo "$W "

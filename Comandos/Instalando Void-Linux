@@ -1,0 +1,59 @@
+Instalando Void-Linux
+
+// Atualizando o repositorio
+sudo xbps-install -Su
+
+// Atualizando os pacotes
+sudo xbps-install -u xbps
+
+// Instalar o void-linux
+sudo void-installer
+
+// Instalar o awesome Wm e Vscode
+sudo xbps-install awesome
+sudo xbps-install vscode
+
+// Configurando o teclado ABNT2
+mkdir /etc/X11/xorg.conf.d/
+vim /etc/X11/xorg.conf.d/10-keyboard.conf
+
+Section "InputClass"
+        Identifier "any value works here"
+        MatchIsKeyboard "on"    # Limit these settings to keyboards
+#       Driver "libinput"
+        # Keyboard layout - comma-separated list for multiple layouts
+        Option "XkbLayout" "br"
+        # Keyboard variant - comma-separated list matching XkbLayout line
+#       Option "XkbVariant" "abnt2"
+EndSection
+
+-- Salve e feche.
+
+// Instalando repositorios
+sudo xbps-install void-repo-nonfree
+sudo xbps-install void-repo-multilib
+sudo xbps-install void-repo-multilib-nonfree
+
+// Instalando Programas para personalizar (wallpaper/icones)
+sudo xbps-install nitrogen 
+sudo xbps-install qt5ct lxappearance
+sudo xbps-install numlockx
+
+// Instalando Configuracao de tela
+sudo xbps-install lxrandr
+
+// Instalando Controle de Audio
+sudo xbps-install pavucontrol
+
+// Instalando o Navegador Brave
+sudo xbps-install git base-devel xtools
+git clone https://github.com/void-linux/void-packages
+cd void-packages
+./xbps-src binary-bootstrap
+echo XBPS_ALLOW_RESTRICTED=yes >> ~/void-packages/etc/conf
+cd srcpkgs
+git clone https://github.com/KF-Art/brave-bin
+cd ..
+./xbps-src pkg brave-bin
+xq xtools
+xi brave-bin
